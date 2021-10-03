@@ -134,7 +134,8 @@ if choices =="Classification":
         msg = [msg]
         dataset = {'msg': msg}
         data = pd.DataFrame(dataset)
-
+        nltk.download('stopwords')
+        nltk.download('punkt')
         #####  Normalizing the dataset #####
         # Replacing Emails
         # Replacing Web Address
